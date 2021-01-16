@@ -14,10 +14,10 @@ void bfs(int i,int j,vector<vector<char>> &a, vector<vector<int>> &vis,int n,int
         q.pop();
         int x=k.first;
         int y=k.second;
-        for(int i=0;i<8;i++){
+        for(int i=0;i<4;i++){
             int newx=dx[i]+x;
             int newy=dy[i]+y;
-            if(newx>=0 && newx<=n && newy>=0 && newy<=m && a[newx][newy]=='1' && vis[newx][newy]==0){
+            if(newx>=0 && newx<n && newy>=0 && newy<m && a[newx][newy]=='1' && vis[newx][newy]==0){
                 vis[newx][newy]=1;
                 q.push({newx,newy});
             }

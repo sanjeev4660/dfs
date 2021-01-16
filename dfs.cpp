@@ -1,4 +1,5 @@
 #include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 vector<int>adj[10000];
 vector<int>vis[10000];
